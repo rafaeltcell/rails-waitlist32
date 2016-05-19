@@ -1,0 +1,28 @@
+default: &default
+  #username: waitlist
+  adapter: postgresql
+  encoding: unicode
+  # For details on connection pooling, see rails configuration guide
+  # http://guides.rubyonrails.org/configuring.html#database-pooling
+  pool: 5
+  timeout: 5000
+
+development:
+  <<: *default
+  host: db
+  database: waitlist32_dev
+  username: postgres
+  password:
+
+test:
+  <<: *default
+  host: db
+  database: waitlist32_test
+  username: postgres
+  password:
+
+#production:
+  #<<: *default
+  #database: waitlist
+  #username: laksdjf
+  #password: <%= ENV['RUBY-GETTING-STARTED_DATABASE_PASSWORD'] %>
