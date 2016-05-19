@@ -2,6 +2,7 @@ tcell/
 *.gem
 *.rbc
 /.config
+config/tcell_agent.config
 /coverage/
 /InstalledFiles
 /log/
