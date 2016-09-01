@@ -58,6 +58,8 @@ RailsWaitlist32::Application.routes.draw do
 
   get '/some/:name', controller: :welcome, action: :some
 
+  resources :waitlist_entries
+
   root :to => 'welcome#index'
 
 end
