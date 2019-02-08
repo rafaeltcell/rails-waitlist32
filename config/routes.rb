@@ -56,6 +56,8 @@ RailsWaitlist32::Application.routes.draw do
   # Note: This route will make all actions in every controller accessible via GET requests.
   # match ':controller(/:action(/:id))(.:format)'
 
+  mount TcellApi => "/api"
+
   get '/some/:name', controller: :welcome, action: :some
 
   resources :waitlist_entries
